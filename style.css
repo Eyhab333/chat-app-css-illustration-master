@@ -1,0 +1,460 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html,
+body {
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+/* ####### */
+
+body {
+  background: #fafafa;
+  background-image: url(./images/bg-purple.svg);
+  background-position: -90px;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  
+}
+
+.text {
+}
+
+.text h1 {
+  font-weight: 500;
+  font-size: 4rem;
+  line-height: 47px;
+  text-align: left;
+  color: #3e2753;
+}
+
+.text p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 28px;
+  color: #a39da9;
+}
+/*=============================== phone ====================*/
+.phone {
+  /* height: 505px; */
+  /* width: 247px; */
+  position: relative;
+}
+
+.container {
+  background: #ffffff;
+  box-shadow: 0px 30px 60px -10px rgba(62, 39, 83, 0.251202);
+  border-radius: 30px;
+  padding: 11px 9.5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* height: 505px; */
+  /* width: 247px; */
+  /* padding-left: 9.5px; */
+  /* padding-right: 9.5px; */
+  
+}
+
+.inner-container {
+  background: #f5f3f7;
+  border: 1px solid rgba(62, 39, 83, 0.0509178);
+  border-radius: 20px;
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+  width: 228px;
+}
+/*===================== phone-header */
+.phone-header {
+  width: 100%;
+  
+  /* padding: 41px 16.5px 12px 15.5px; */
+  /* border: 1px solid blue; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -13px;
+}
+
+.name-and-avatar {
+  width: 100%;
+  padding: 41px 0px 12px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.arrow-left {
+  height: 10.00043773651123px;
+  width: 4.000218868255615px;
+}
+
+.avatar {
+  height: 24px;
+  width: 24px;
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+.avatar img {
+  border-radius: 50%;
+}
+
+.name-and-status {
+  margin-right: 46px;
+}
+
+.name-and-status h2 {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13px;
+  color: #ffffff;
+}
+
+.name-and-status p {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 9px;
+
+  color: #d99eff;
+}
+
+.three-dots {
+  height: 8px;
+  width: 2px;
+}
+
+.three-dots img {
+}
+/*===================== phone-chat-area */
+.phone p {
+  /* max-width: 112px; */
+}
+
+.phone-chat-area {
+}
+
+/*===================== group-one */
+.group-one {
+  margin-top: 11px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.that {
+  width: 128px;
+  padding: 6px 8px;
+  background: #eee5f4;
+  border-radius: 10px 10px 4px 10px;
+  margin-bottom: 8px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.that p {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 11px;
+  color: #9341c8;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.could {
+  width: 128px;
+  padding: 6px 8px;
+  background: #eee5f4;
+  border-radius: 10px 10px 4px 10px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.could p {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 11px;
+  color: #9341c8;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+/*===================== group-two */
+.group-two {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.dog-pictures {
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: flex-end;
+  width: 136px;
+  height: 40px;
+}
+
+.dog-pictures div {
+  height: 40px;
+  width: 40px;
+  box-shadow: 0px 10px 5px -5px rgba(62, 39, 83, 0.045318);
+  border-radius: 10px;
+}
+
+.dog-pictures div img {
+  border-radius: 10px;
+}
+.one {
+  margin-right: 18px;
+}
+
+.one img {
+}
+
+.two {
+  margin-right: 18px;
+}
+
+.two img {
+}
+
+.three {
+}
+
+.three img {
+}
+
+.here {
+  padding: 6px 8px;
+  background: #ffffff;
+  box-shadow: 0px 10px 5px -5px rgba(62, 39, 83, 0.045318);
+  border-radius: 10px 10px 4px 10px;
+  margin-bottom: 8px;
+  width: 133px;
+}
+
+.here p {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 11px;
+  color: #6e5d7e;
+}
+
+.can {
+  padding: 6px 8px;
+  background: #ffffff;
+  box-shadow: 0px 10px 5px -5px rgba(62, 39, 83, 0.045318);
+  border-radius: 10px 10px 4px 10px;
+  width: 92px;
+}
+
+.can p {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 11px;
+  color: #6e5d7e;
+}
+/*=================== group-three */
+.group-three {
+  margin-bottom: 16px;
+}
+
+.she {
+  background: #eee5f4;
+  border-radius: 10px 10px 4px 10px;
+  margin-bottom: 8px;
+  width: 128px;
+  padding: 6px 8px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.she p {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 11px;
+  color: #9341c8;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.price-one {
+  margin-bottom: 8px;
+}
+
+.price-one,
+.price-two {
+  background: linear-gradient(225deg, #e844ff 0%, #8739ff 100%);
+  box-shadow: 0px 10px 5px -5px rgba(62, 39, 83, 0.045318);
+  border-radius: 10px 10px 4px 10px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 160px;
+  height: 32px;
+  padding-left: 8px;
+  padding-right: 10px;
+}
+
+.price-two {
+}
+
+.oval {
+  height: 12px;
+  width: 12px;
+  margin-left: 8px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.p-one {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 11px;
+  color: #ffffff;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.minute {
+  margin-left: 25px;
+}
+
+.hour {
+  margin-left: 44px;
+}
+.p-two {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 11px;
+  color: #ffffff;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+/*============= type-a-message */
+.type-a-message {
+  background: #ffffff;
+  border-radius: 16.9544px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 4.8px 4px 4.8px 19.42px;
+}
+
+.type-a-message__p {
+}
+
+.type-a-message__p p {
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 11px;
+  /* identical to box height */
+
+  letter-spacing: -0.0703125px;
+
+  color: #c5c9cc;
+}
+
+.type-a-message__img {
+  height: 25px;
+  width: 25px;
+  
+}
+
+.type-a-message__img img {
+}
+/*##### for-phone-only ##########*/
+@media (max-width: 599px) {
+  main {
+    flex-direction: column-reverse;
+  }
+}
+
+/*############ for-tablet-portrait-up ##############*/
+@media (min-width: 600px) {
+  body {
+    background-position: left right;
+  }
+
+  main {
+    flex-direction: row-reverse;
+  }
+
+  .phone {
+    margin-right: 125px;
+  }
+
+  .text p {
+    width: 445px;
+  }
+}

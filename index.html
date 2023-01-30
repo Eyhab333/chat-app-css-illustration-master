@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | chat-app</title>
+
+    <link rel="stylesheet" href="normalize.css" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Rubik", sans-serif;
+      }
+
+      html {
+        font-size: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <!--===================== text ===================-->
+      <div class="text">
+        <h1 style="margin-bottom: 24px">Simple booking</h1>
+        <p>
+          Stay in touch with our dog walkers through the chat interface. This
+          makes it easy to discuss arrangements and make bookings. Once the walk
+          has been completed you can rate your walker and book again all through
+          the chat.
+        </p>
+      </div>
+      <!--===================== phone ==================-->
+      <div class="phone">
+        <div class="container">
+          <div class="inner-container">
+            <!--===== phone-header =====-->
+            <div style="position:absolute;top: -2px;z-index: 1;left: -6px;width: 258px;">
+              <img style="height: 92px;width: 100%" src="./images/bg-phone-header.svg" alt="bg">
+            </div>
+            <div class="phone-header">
+              <div class="name-and-avatar">
+                <div class="arrow-left">
+                  <img src="./images/left-arrow.svg" alt="arrow" />
+                </div>
+                <div class="avatar">
+                  <img src="./images/avatar.jpg" alt="avatar" />
+                </div>
+                <div class="name-and-status">
+                  <h2>Samuel Green</h2>
+                  <p>Available to Walk</p>
+                </div>
+                <div class="three-dots">
+                  <img src="./images/three-dots.svg" alt="three-dots" />
+                </div>
+              </div>
+            </div>
+            <!--===== phone-chat-area ==-->
+            <div class="phone-chat-area">
+              <div class="group-one">
+                <div class="that">
+                  <p>That sounds great. I’d be happy with that.</p>
+                </div>
+                <div class="could">
+                  <p>Could you send over some pictures of your dog, please?</p>
+                </div>
+              </div>
+              <div class="group-two">
+                <div class="dog-pictures">
+                  <div class="one">
+                    <img src="./images/dog-image-1.jpg" alt="one" />
+                  </div>
+                  <div class="two">
+                    <img src="./images/dog-image-2.jpg" alt="two" />
+                  </div>
+                  <div class="three">
+                    <img src="./images/dog-image-3.jpg" alt="three" />
+                  </div>
+                </div>
+                <div class="here">
+                  <p>Here are a few pictures. She’s a happy girl!</p>
+                </div>
+                <div class="can">
+                  <p>Can you make it?</p>
+                </div>
+              </div>
+              <div  class="group-three">
+                <div class="she">
+                  <p>
+                    She looks so happy! The time we discussed works. How long
+                    shall I take her out for?
+                  </p>
+                </div>
+                <div class="price-one">
+                  <div class="oval">
+                    <img src="./images/oval.svg" alt="" />
+                  </div>
+                  <p class="p-one minute">30 minute walk</p>
+                  <p class="p-two">$29</p>
+                </div>
+                <div class="price-two">
+                  <div class="oval">
+                    <img src="./images/oval.svg" alt="" />
+                  </div>
+                  <p class="p-one hour">1 hour walk</p>
+                  <p class="p-two">$49</p>
+                </div>
+              </div>
+              <div class="type-a-message">
+                <div class="type-a-message__p">
+                  <p>Type a message…</p>
+                </div>
+                <div class="type-a-message__img">
+                  <img src="./images/arrow-right.svg" alt="arrow-right" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div style="position: absolute;right: 0;bottom: 0;height: 600px;object-fit: none;">
+      <img style="height: 600px;width: 650px;object-position: 150px 0px;" src="./images/bg-gray.svg" alt="">
+    </div>
+  </body>
+</html>
