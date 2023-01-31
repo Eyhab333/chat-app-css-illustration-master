@@ -84,10 +84,6 @@ body {
 main {
   display: flex;
   align-items: center;
-  
-}
-
-.text {
 }
 
 .text h1 {
@@ -124,7 +120,6 @@ main {
   /* width: 247px; */
   /* padding-left: 9.5px; */
   /* padding-right: 9.5px; */
-  
 }
 
 .inner-container {
@@ -138,7 +133,7 @@ main {
 /*===================== phone-header */
 .phone-header {
   width: 100%;
-  
+
   /* padding: 41px 16.5px 12px 15.5px; */
   /* border: 1px solid blue; */
   display: flex;
@@ -164,7 +159,7 @@ main {
 .avatar {
   height: 24px;
   width: 24px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   border-radius: 50%;
   margin-right: 8px;
   margin-left: 8px;
@@ -198,15 +193,7 @@ main {
   width: 2px;
 }
 
-.three-dots img {
-}
 /*===================== phone-chat-area */
-.phone p {
-  /* max-width: 112px; */
-}
-
-.phone-chat-area {
-}
 
 /*===================== group-one */
 .group-one {
@@ -214,7 +201,6 @@ main {
   margin-bottom: 16px;
   display: flex;
   flex-direction: column;
-
 }
 
 .that {
@@ -280,20 +266,8 @@ main {
   margin-right: 18px;
 }
 
-.one img {
-}
-
 .two {
   margin-right: 18px;
-}
-
-.two img {
-}
-
-.three {
-}
-
-.three img {
 }
 
 .here {
@@ -367,9 +341,6 @@ main {
   padding-right: 10px;
 }
 
-.price-two {
-}
-
 .oval {
   height: 12px;
   width: 12px;
@@ -411,28 +382,19 @@ main {
   padding: 4.8px 4px 4.8px 19.42px;
 }
 
-.type-a-message__p {
-}
-
 .type-a-message__p p {
   font-weight: 400;
   font-size: 9px;
   line-height: 11px;
-  /* identical to box height */
-
   letter-spacing: -0.0703125px;
-
   color: #c5c9cc;
 }
 
 .type-a-message__img {
   height: 25px;
   width: 25px;
-  
 }
 
-.type-a-message__img img {
-}
 /*##### for-phone-only ##########*/
 @media (max-width: 599px) {
   body {
@@ -476,5 +438,19 @@ main {
 
   .text p {
     width: 445px;
+  }
+
+  .bg-gray-container {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 600px;
+    object-fit: none;
+  }
+
+  .bg-gray-img {
+    height: 600px;
+    width: 650px;
+    object-position: 150px 0px;
   }
 }
