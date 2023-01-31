@@ -435,15 +435,35 @@ main {
 }
 /*##### for-phone-only ##########*/
 @media (max-width: 599px) {
+  body {
+    background-position: -150px 0px;
+    background-size: 350px;
+  }
+
   main {
+    margin-top: 422px;
     flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .text {
+    margin-top: 64px;
+    padding-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 311px;
+  }
+
+  .bg-gray-container {
+    display: none;
   }
 }
 
 /*############ for-tablet-portrait-up ##############*/
 @media (min-width: 600px) {
   body {
-    background-position: left right;
+    background-position: left;
   }
 
   main {
